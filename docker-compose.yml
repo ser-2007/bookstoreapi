@@ -19,7 +19,7 @@ services:
       - database
     ports:
       - "80:80"
-     networks:
+    networks:
       - clarusnet
 networks:
   clarusnet:
