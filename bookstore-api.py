@@ -1,4 +1,4 @@
-# Import Flask modules x
+# Import Flask modules
 from flask import Flask, jsonify, abort, request, make_response
 from flaskext.mysql import MySQL
 
