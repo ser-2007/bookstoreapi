@@ -31,7 +31,7 @@ resource "aws_instance" "tf-docker-instance" {
                -o /usr/local/bin/docker-compose
                chmod +x /usr/local/bin/docker-compose
                mkdir -p /home/ec2-user/bookstore-api
-               TOKEN="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+               TOKEN="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"
                FOLDER="https://$TOKEN@raw.githubusercontent.com/ser-2007/bookstoreapi/master/"
                curl -s --create-dirs -o "/home/ec2-user/bookstore-api/app.py" -L "$FOLDER"bookstore-api.py
                curl -s --create-dirs -o "/home/ec2-user/bookstore-api/requirements.txt" -L "$FOLDER"requirements.txt
